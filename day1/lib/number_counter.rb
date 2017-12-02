@@ -9,5 +9,10 @@ class NumberCounter
       end
       return_numbers
     end
+
+    def add_numbers(numbers_array)
+      return 0 if numbers_array.empty?
+      numbers_array.reduce(&:+)
+    end
   end
 end

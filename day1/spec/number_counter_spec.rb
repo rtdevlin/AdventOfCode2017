@@ -21,4 +21,11 @@ describe NumberCounter do
       end
     end
   end
+
+  context '#add_numbers' do
+    it 'will add numbers of an array and return the result' do
+      expect(described_class.add_numbers [1,1,1,1]).to eq 4
+      expect(described_class.add_numbers []).to eq 0
+    end
+  end
 end
